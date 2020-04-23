@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <SaM_Settings_category>Signs and Memorials</SaM_Settings_category>
+  <SaM_Settings_editOnBuild_label>Automatisch bearbeiten</SaM_Settings_editOnBuild_label>
+  <SaM_Settings_editOnBuild_description>Ã–ffnet den Bearbeiten-Tab automatÃ­sch sobald ein Schild/Denkmal gebaut wurde. Default (aus)</SaM_Settings_editOnBuild_description>
+  <SaM_Settings_pauseOnEdit_label>Spiel beim Bearbeiten anhalten</SaM_Settings_pauseOnEdit_label>
+  <SaM_Settings_pauseOnEdit_description>Schaltet das Spiel pausiert (falls nicht bereits), wenn ein Zeichen zu bearbeiten. Default (aus)</SaM_Settings_pauseOnEdit_description>
+</LanguageData>

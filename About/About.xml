@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Signs and Memorials (Continued)</name>
+  <packageId>Mlie.SignsAndMemorials</packageId>
+  <author>MCManuelLP</author>
+  <url>https://github.com/emipa606/SignsAndMemorials</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>Update of MCManuelLPs mod for RimWorld 1.1
+https://steamcommunity.com/sharedfiles/filedetails/?id=846276095
+
+[img]https://i.imgur.com/GYswkZ7.png[/img]
+
+Support-chat:
+https://invite.gg/mlie
+
+Non-steam version:
+https://github.com/emipa606/SignsAndMemorials
+
+- Fixed for 1.1 by @jtgibson at:
+  https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
+	
+--- Original Description ---
+Signs and memorials for leaving notes to remind you of stuff</description>
+</ModMetaData>
