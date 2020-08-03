@@ -1,12 +1,30 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+
+  <!-- Signs -->
+
+  <SaM_Sign.label>sign</SaM_Sign.label>
+  <SaM_Sign.description>Simple sign. Text can be manually edited.</SaM_Sign.description>
+  <SaM_Sign_Blueprint.label>sign (blueprint)</SaM_Sign_Blueprint.label>
+  <SaM_Sign_Blueprint_Install.label>sign (blueprint)</SaM_Sign_Blueprint_Install.label>
+  <SaM_Sign_Frame.label>sign (building)</SaM_Sign_Frame.label>
+  <SaM_Sign_Frame.description>Simple sign. Text can be manually edited.</SaM_Sign_Frame.description>
+
+
+  <!-- Memorials -->
+
+  <SaM_Memorial.label>memorial</SaM_Memorial.label>
+  <SaM_Memorial.description>Fancy memorial. Text can be manually edited.</SaM_Memorial.description>
+  <SaM_Memorial_Blueprint.label>memorial (blueprint)</SaM_Memorial_Blueprint.label>
+  <SaM_Memorial_Blueprint_Install.label>memorial (blueprint)</SaM_Memorial_Blueprint_Install.label>
+  <SaM_Memorial_Frame.label>memorial (building)</SaM_Memorial_Frame.label>
+  <SaM_Memorial_Frame.description>Fancy memorial. Text can be manually edited.</SaM_Memorial_Frame.description>
+
+
   <!--
     ATTENTION:
       this file is essentially useless and just maintained to serve as a base for translation,
       all these values are actually set in the code
   -->
-  <SaM_Sign.label>sign</SaM_Sign.label>
-  <SaM_Sign.description>Simple sign. Text can be manually edited.</SaM_Sign.description>
-  <SaM_Memorial.label>memorial</SaM_Memorial.label>
-  <SaM_Memorial.description>Fancy memorial. Text can be manually edited.</SaM_Memorial.description>
+
 </LanguageData>
