@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Signs and Memorials (Continued)</name>
   <packageId>Mlie.SignsAndMemorials</packageId>
@@ -8,23 +8,49 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>Update of MCManuelLPs mod for RimWorld 1.1
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of MCManuelLPs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=846276095
-
-[img]https://i.imgur.com/GYswkZ7.png[/img]
-
-Support-chat:
-https://invite.gg/mlie
-
-Non-steam version:
-https://github.com/emipa606/SignsAndMemorials
 
 - Fixed for 1.1 by @jtgibson at:
   https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/SignsAndMemorials][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-Signs and memorials for leaving notes to remind you of stuff</description>
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
+This mod adds signs and memorials for leaving notes to remind you of stuff.
+
+--- ATTENTION ---
+The lovely @jtgibson managed to fix the issue, you can go ahead and grab their version over here: https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
+I don&apos;t really have the time to maintain this anymore, but if someone wants to take over, please go ahead you have my blesing.
+[strike]There seems to be an issue with loading saves on some machines.
+If the issue persists on retry, disabling or removing the mod will allow you to load your world again, although any built memorials will disappear. Sorry for the inconveniences.[/strike]
+
+--- MANUAL INSTALL ---
+Head on over to https://ludeon.com/forums/index.php?topic=29773.0 if you want to install this mod without the Steam Workshop or if you need an older version.
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
