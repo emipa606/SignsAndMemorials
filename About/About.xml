@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Signs and Memorials (Continued)</name>
   <packageId>Mlie.SignsAndMemorials</packageId>
@@ -12,29 +12,33 @@
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of MCManuelLPs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=846276095
 
 - Fixed for 1.1 by @jtgibson at:
   https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
 		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
 		[td][url=https://github.com/emipa606/SignsAndMemorials][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-	[/tr]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 This mod adds signs and memorials for leaving notes to remind you of stuff.
 
 --- ATTENTION ---
 The lovely @jtgibson managed to fix the issue, you can go ahead and grab their version over here: https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
-I don&apos;t really have the time to maintain this anymore, but if someone wants to take over, please go ahead you have my blesing.
+I don't really have the time to maintain this anymore, but if someone wants to take over, please go ahead you have my blesing.
 [strike]There seems to be an issue with loading saves on some machines.
 If the issue persists on retry, disabling or removing the mod will allow you to load your world again, although any built memorials will disappear. Sorry for the inconveniences.[/strike]
 
@@ -42,7 +46,7 @@ If the issue persists on retry, disabling or removing the mod will allow you to 
 Head on over to https://ludeon.com/forums/index.php?topic=29773.0 if you want to install this mod without the Steam Workshop or if you need an older version.
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -53,4 +57,3 @@ Head on over to https://ludeon.com/forums/index.php?topic=29773.0 if you want to
 [/list]
 </description>
 </ModMetaData>
-
