@@ -1,6 +1,6 @@
 # SignsAndMemorials
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of MCManuelLPs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=846276095
@@ -8,26 +8,17 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=846276095
 - Fixed for 1.1 by @jtgibson at:
   https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/SignsAndMemorials]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 This mod adds signs and memorials for leaving notes to remind you of stuff.
 
 --- ATTENTION ---
 The lovely @jtgibson managed to fix the issue, you can go ahead and grab their version over here: https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
-I don&apos;t really have the time to maintain this anymore, but if someone wants to take over, please go ahead you have my blesing.
+I don't really have the time to maintain this anymore, but if someone wants to take over, please go ahead you have my blesing.
 [strike]There seems to be an issue with loading saves on some machines.
 If the issue persists on retry, disabling or removing the mod will allow you to load your world again, although any built memorials will disappear. Sorry for the inconveniences.[/strike]
 
@@ -35,7 +26,7 @@ If the issue persists on retry, disabling or removing the mod will allow you to 
 Head on over to https://ludeon.com/forums/index.php?topic=29773.0 if you want to install this mod without the Steam Workshop or if you need an older version.
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -45,6 +36,7 @@ Head on over to https://ludeon.com/forums/index.php?topic=29773.0 if you want to
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

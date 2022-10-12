@@ -2,113 +2,112 @@
 using UnityEngine;
 using Verse;
 
-namespace SaM
+namespace SaM;
+
+public class ITab_View : ITab
 {
-    public class ITab_View : ITab
+    [Unsaved] private bool already_paused;
+
+    //
+    // Fields
+    //
+    private bool editing;
+    private string tabThingID;
+    private string text = "";
+
+    //
+    // Constructors
+    //
+    public ITab_View()
     {
-        [Unsaved] private bool already_paused;
+        size = new Vector2(570, 470);
+        labelKey = "SaM_TabView";
+        tutorTag = "View";
+    }
 
-        //
-        // Fields
-        //
-        private bool editing;
-        private string tabThingID;
-        private string text = "";
+    //
+    // Properties
+    //
+    public override bool IsVisible => true;
 
-        //
-        // Constructors
-        //
-        public ITab_View()
+    //
+    // Methods
+    //
+    public override void TabUpdate()
+    {
+        base.TabUpdate();
+        if (tabThingID == SelThing.GetUniqueLoadID())
         {
-            size = new Vector2(570, 470);
-            labelKey = "SaM_TabView";
-            tutorTag = "View";
+            return;
         }
 
-        //
-        // Properties
-        //
-        public override bool IsVisible => true;
+        text = ((Building_Memorial_Base)SelThing).Text;
+        tabThingID = SelThing.GetUniqueLoadID();
+    }
 
-        //
-        // Methods
-        //
-        public override void TabUpdate()
+    protected override void FillTab()
+    {
+        Text.Font = GameFont.Small;
+
+        var rectText = new Rect(20, 20, size.x - 40, size.y - 75);
+        var rectButton = new Rect(20, size.y - 50, size.x - 40, 30);
+        var rectCancel = new Rect(rectButton.x, rectButton.y, (rectButton.width - 10) / 2, rectButton.height);
+        var rectSave = new Rect((size.x + 10) / 2, rectButton.y, (rectButton.width - 10) / 2, rectButton.height);
+
+        if (editing)
         {
-            base.TabUpdate();
-            if (tabThingID == SelThing.GetUniqueLoadID())
+            var memorial = (Building_Memorial_Base)SelThing;
+
+            text = Widgets.TextArea(rectText, text);
+
+            if (Widgets.ButtonText(rectCancel, "SaM_TabView_Cancel".Translate()))
+            {
+                editing = false;
+                text = memorial.Text;
+            }
+
+            if (Widgets.ButtonText(rectSave, "SaM_TabView_Save".Translate()))
+            {
+                editing = false;
+                memorial.Text = text;
+            }
+
+            if (editing)
             {
                 return;
             }
 
-            text = ((Building_Memorial_Base) SelThing).Text;
-            tabThingID = SelThing.GetUniqueLoadID();
-        }
-
-        protected override void FillTab()
-        {
-            Text.Font = GameFont.Small;
-
-            var rectText = new Rect(20, 20, size.x - 40, size.y - 75);
-            var rectButton = new Rect(20, size.y - 50, size.x - 40, 30);
-            var rectCancel = new Rect(rectButton.x, rectButton.y, (rectButton.width - 10) / 2, rectButton.height);
-            var rectSave = new Rect((size.x + 10) / 2, rectButton.y, (rectButton.width - 10) / 2, rectButton.height);
-
-            if (editing)
+            //state changed
+            if (SaM_Mod.settings.pauseGameOnEdit && Find.TickManager.Paused && !already_paused)
             {
-                var memorial = (Building_Memorial_Base) SelThing;
+                Find.TickManager.TogglePaused();
+            }
 
-                text = Widgets.TextArea(rectText, text);
+            memorial.SaveText();
+        }
+        else
+        {
+            Widgets.Label(rectText, text);
 
-                if (Widgets.ButtonText(rectCancel, "SaM_TabView_Cancel".Translate()))
-                {
-                    editing = false;
-                    text = memorial.Text;
-                }
+            if (!Widgets.ButtonText(rectButton, "SaM_TabView_Edit".Translate()))
+            {
+                return;
+            }
 
-                if (Widgets.ButtonText(rectSave, "SaM_TabView_Save".Translate()))
-                {
-                    editing = false;
-                    memorial.Text = text;
-                }
+            editing = true;
+            if (!SaM_Mod.settings.pauseGameOnEdit)
+            {
+                return;
+            }
 
-                if (editing)
-                {
-                    return;
-                }
-
-                //state changed
-                if (SaM_Mod.settings.pauseGameOnEdit && Find.TickManager.Paused && !already_paused)
-                {
-                    Find.TickManager.TogglePaused();
-                }
-
-                memorial.SaveText();
+            if (Find.TickManager.Paused)
+            {
+                already_paused = true;
             }
             else
             {
-                Widgets.Label(rectText, text);
-
-                if (!Widgets.ButtonText(rectButton, "SaM_TabView_Edit".Translate()))
-                {
-                    return;
-                }
-
-                editing = true;
-                if (!SaM_Mod.settings.pauseGameOnEdit)
-                {
-                    return;
-                }
-
-                if (Find.TickManager.Paused)
-                {
-                    already_paused = true;
-                }
-                else
-                {
-                    already_paused = false;
-                    Find.TickManager.TogglePaused();
-                }
+                already_paused = false;
+                Find.TickManager.TogglePaused();
             }
         }
     }

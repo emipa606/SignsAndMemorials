@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <SaM_Settings_modVersion_label>Installed mod-version: {0}</SaM_Settings_modVersion_label>
   <SaM_Settings_category>Signs and Memorials</SaM_Settings_category>
   <SaM_Settings_editOnBuild_label>Auto-open edit</SaM_Settings_editOnBuild_label>
   <SaM_Settings_editOnBuild_description>Opens the edit tab when a sign/memorial has been built. Default (no)</SaM_Settings_editOnBuild_description>
