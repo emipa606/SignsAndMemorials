@@ -54,6 +54,12 @@ public class Building_Memorial_Base : Building
     //
     public void SaveText()
     {
+        if (string.IsNullOrEmpty(text))
+        {
+            savedata = string.Empty;
+            return;
+        }
+
         try
         {
             var encoding = Encoding.Unicode;
@@ -63,12 +69,18 @@ public class Building_Memorial_Base : Building
         }
         catch (Exception E)
         {
-            Log.ErrorOnce("Unable to encode memorial data for " + ThingID + ": " + E, ThingID.GetHashCode());
+            Log.ErrorOnce($"Unable to encode memorial data for {ThingID}: {E}", ThingID.GetHashCode());
         }
     }
 
     private void LoadText()
     {
+        if (string.IsNullOrEmpty(savedata))
+        {
+            text = string.Empty;
+            return;
+        }
+
         try
         {
             var encoding = Encoding.Unicode;
@@ -79,22 +91,32 @@ public class Building_Memorial_Base : Building
         }
         catch (Exception E)
         {
-            Log.ErrorOnce("Unable to decode memorial data for " + ThingID + ": " + E, ThingID.GetHashCode());
+            Log.ErrorOnce($"Unable to decode memorial data for {ThingID}: {E}", ThingID.GetHashCode());
         }
     }
 
     public override void ExposeData()
     {
         base.ExposeData();
-        SaveText();
+        if (Scribe.mode == LoadSaveMode.Saving)
+        {
+            SaveText();
+        }
+
         Scribe_Values.Look(ref savedata, "text");
+
+        if (Scribe.mode == LoadSaveMode.PostLoadInit)
+        {
+            LoadText();
+        }
     }
 
-    public override void PostMapInit()
-    {
-        base.PostMapInit();
-        LoadText();
-    }
+    //public override void PostMapInit()
+    //{
+    //    base.PostMapInit();
+    //    LoadText();
+    //}
+
 
     // THIS METHOD HANDLES THE STRING IN THE BOTTOM LEFT
     public override string GetInspectString()
@@ -163,6 +185,12 @@ public class Building_Memorial_Base : Building
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
+        //if (respawningAfterLoad)
+        //{
+        //    Log.Message($"Loading text for {this}");
+        //    LoadText();
+        //}
+
         if (!(SaM_Mod.settings?.editOnBuild ?? false))
         {
             return;

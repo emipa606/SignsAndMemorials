@@ -39,4 +39,5 @@ Head on over to https://ludeon.com/forums/index.php?topic=29773.0 if you want to
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2071681396]![Image](https://img.shields.io/github/v/release/emipa606/SignsAndMemorials?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
 

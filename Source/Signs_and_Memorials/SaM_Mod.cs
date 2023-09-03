@@ -16,8 +16,7 @@ public class SaM_Mod : Mod
     {
         settings = GetSettings<SaM_ModSettings>();
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(
-                ModLister.GetActiveModWithIdentifier("Mlie.SignsAndMemorials"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     //
