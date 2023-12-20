@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SaM_Base" Abstract="True">
+    <category>Building</category>
+    <thingClass>SaM.Building_Memorial_Base</thingClass>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <hasTooltip>true</hasTooltip>
+    <coversFloor>false</coversFloor>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <designationCategory>Misc</designationCategory>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <inspectorTabs>
+      <li>SaM.ITab_View</li>
+    </inspectorTabs>
+  </ThingDef>
+  <!--========================= Signs =============================-->
+  <ThingDef ParentName="SaM_Base" Name="SaM_Sign">
+    <defName>SaM_Sign</defName>
+    <label>sign</label>
+    <description>Simple sign. Text can be manually edited.</description>
+    <graphicData>
+      <texPath>Things/Building/SaM/Sign</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.078125,0.078125,0.921875,0.921875)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>30</WorkToBuild>
+      <Beauty>1</Beauty>
+      <Flammability>1.0</Flammability>
+      <Mass>1</Mass>
+    </statBases>
+    <costStuffCount>15</costStuffCount>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>8</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <blockLight>false</blockLight>
+  </ThingDef>
+  <!--========================= Memorials =============================-->
+  <ThingDef ParentName="SaM_Base" Name="SaM_Memorial">
+    <defName>SaM_Memorial</defName>
+    <label>memorial</label>
+    <description>Fancy memorial. Text can be manually edited.</description>
+    <graphicData>
+      <texPath>Things/Building/SaM/Memorial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.03125,0.03125,0.96875,0.984375)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>190</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Beauty>4</Beauty>
+      <Flammability>1.0</Flammability>
+      <Mass>80</Mass>
+    </statBases>
+    <costStuffCount>35</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+  <!--========================= WallSign =============================-->
+  <ThingDef ParentName="SaM_Base" Name="SaM_WallSign">
+    <defName>SaM_WallSign</defName>
+    <label>wall sign</label>
+    <description>Simple wall sign. Text can be manually edited.</description>
+    <graphicData>
+      <texPath>Things/Building/SaM/WallSign/WallSign</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawOffsetNorth>(0,0,-0.3)</drawOffsetNorth>
+      <drawOffsetEast>(-0.1,0,0.2)</drawOffsetEast>
+      <drawOffsetWest>(0.1,0,0.2)</drawOffsetWest>
+      <drawOffsetSouth>(0,0,0.2)</drawOffsetSouth>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <fillPercent>0.1</fillPercent>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <clearBuildingArea>false</clearBuildingArea>
+    <rotatable>true</rotatable>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>30</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>1</Mass>
+    </statBases>
+    <costStuffCount>10</costStuffCount>
+    <placeWorkers>
+      <li>SaM.WallSign_PlaceWorker</li>
+    </placeWorkers>
+  </ThingDef>
+</Defs>

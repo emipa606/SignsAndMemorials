@@ -7,4 +7,7 @@
   <SaM_Settings_editOnBuild_description>创建标志/纪念碑时打开编辑选项卡。默认（无）</SaM_Settings_editOnBuild_description>
   <SaM_Settings_pauseOnEdit_label>编辑时暂停游戏</SaM_Settings_pauseOnEdit_label>
   <SaM_Settings_pauseOnEdit_description>在编辑标志时切换游戏暂停（如果尚未暂停）。默认值（否）</SaM_Settings_pauseOnEdit_description>
+  <SaM_Placeworker_OnSupport>必须放在墙上或岩石上。</SaM_Placeworker_OnSupport>
+  <SaM_Placeworker_Walkable>必须面向可步行的地砖。</SaM_Placeworker_Walkable>
+  <SaM_Placeworker_Existing>相同的建筑已经存在。</SaM_Placeworker_Existing>
 </LanguageData>
