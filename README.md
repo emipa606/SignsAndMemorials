@@ -7,6 +7,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=846276095
 
 - Fixed for 1.1 by @jtgibson at:
   https://github.com/jtgibson01/RimWorld-Signs_and_Memorials
+- Added a wall-mounted sign
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

@@ -15,7 +15,7 @@ public class Building_Memorial_Base : Building
     // Static Fields
     //
     // this value is only correct when the object is placed.
-    // in minified form this should be 5 but sadly we can't find that out easily
+    // in minified form this should be 5, but sadly we can't find that out easily
     // so there will be a stupid scrollbar while in minified form.
     // you can also not access the full text, but I believe that's not a bad thing
     //private static int MAX_LINES = 6;
