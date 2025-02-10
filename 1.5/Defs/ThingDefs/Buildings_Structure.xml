@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="SaM_Base" Abstract="True">
     <category>Building</category>
@@ -86,6 +86,7 @@
     <costStuffCount>35</costStuffCount>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.8</fillPercent>
