@@ -6,7 +6,7 @@ namespace SaM;
 
 public class ITab_View : ITab
 {
-    [Unsaved] private bool already_paused;
+    [Unsaved] private bool alreadyPaused;
 
     //
     // Fields
@@ -78,7 +78,7 @@ public class ITab_View : ITab
             }
 
             //state changed
-            if (SaM_Mod.settings.pauseGameOnEdit && Find.TickManager.Paused && !already_paused)
+            if (SaM_Mod.Settings.PauseGameOnEdit && Find.TickManager.Paused && !alreadyPaused)
             {
                 Find.TickManager.TogglePaused();
             }
@@ -95,18 +95,18 @@ public class ITab_View : ITab
             }
 
             editing = true;
-            if (!SaM_Mod.settings.pauseGameOnEdit)
+            if (!SaM_Mod.Settings.PauseGameOnEdit)
             {
                 return;
             }
 
             if (Find.TickManager.Paused)
             {
-                already_paused = true;
+                alreadyPaused = true;
             }
             else
             {
-                already_paused = false;
+                alreadyPaused = false;
                 Find.TickManager.TogglePaused();
             }
         }

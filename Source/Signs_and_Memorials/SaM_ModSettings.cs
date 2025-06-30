@@ -7,8 +7,8 @@ public class SaM_ModSettings : ModSettings
     //
     // Fields
     //
-    public bool editOnBuild;
-    public bool pauseGameOnEdit;
+    public bool EditOnBuild;
+    public bool PauseGameOnEdit;
 
     //
     // Constructors
@@ -19,7 +19,7 @@ public class SaM_ModSettings : ModSettings
     //
     public override void ExposeData()
     {
-        Scribe_Values.Look(ref editOnBuild, "edit_on_build");
-        Scribe_Values.Look(ref pauseGameOnEdit, "pause_game_on_edit");
+        Scribe_Values.Look(ref EditOnBuild, "edit_on_build");
+        Scribe_Values.Look(ref PauseGameOnEdit, "pause_game_on_edit");
     }
 }

@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 124704553
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e7e606c781d5d38242d105d46e4ec974
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e7e606c781d5d38242d105d46e4ec974
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_southm.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_east.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_west.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_northm.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_south.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/Memorial.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_westm.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_eastm.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/WallSign/WallSign_north.png
+- Assets/Data/Mlie.SignsAndMemorials/Textures/Things/Building/SaM/Sign.png
+Dependencies: []

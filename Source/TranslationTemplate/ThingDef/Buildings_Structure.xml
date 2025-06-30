@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: memorial -->
+  <SaM_Memorial.label>memorial</SaM_Memorial.label>
+  <!-- EN: Fancy memorial. Text can be manually edited. -->
+  <SaM_Memorial.description>Fancy memorial. Text can be manually edited.</SaM_Memorial.description>
+  <!-- EN: sign -->
+  <SaM_Sign.label>sign</SaM_Sign.label>
+  <!-- EN: Simple sign. Text can be manually edited. -->
+  <SaM_Sign.description>Simple sign. Text can be manually edited.</SaM_Sign.description>
+  <!-- EN: wall sign -->
+  <SaM_WallSign.label>wall sign</SaM_WallSign.label>
+  <!-- EN: Simple wall sign. Text can be manually edited. -->
+  <SaM_WallSign.description>Simple wall sign. Text can be manually edited.</SaM_WallSign.description>
+</LanguageData>

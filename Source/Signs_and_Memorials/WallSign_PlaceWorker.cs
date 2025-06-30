@@ -11,17 +11,8 @@ public class WallSign_PlaceWorker : PlaceWorker
         var c = loc;
 
         var support = c.GetEdifice(map);
-        if (support == null)
-        {
-            return "SaM_Placeworker_OnSupport".Translate();
-        }
-
-        if (support.def?.graphicData == null)
-        {
-            return "SaM_Placeworker_OnSupport".Translate();
-        }
-
-        if ((support.def.graphicData.linkFlags & (LinkFlags.Rock | LinkFlags.Wall)) == 0)
+        if (support?.def?.graphicData == null ||
+            (support.def.graphicData.linkFlags & (LinkFlags.Rock | LinkFlags.Wall)) == 0)
         {
             return "SaM_Placeworker_OnSupport".Translate();
         }

@@ -6,7 +6,7 @@ namespace SaM;
 
 public class SaM_Mod : Mod
 {
-    public static SaM_ModSettings settings;
+    public static SaM_ModSettings Settings;
     private static string currentVersion;
 
     //
@@ -14,7 +14,7 @@ public class SaM_Mod : Mod
     //
     public SaM_Mod(ModContentPack content) : base(content)
     {
-        settings = GetSettings<SaM_ModSettings>();
+        Settings = GetSettings<SaM_ModSettings>();
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
@@ -31,7 +31,7 @@ public class SaM_Mod : Mod
     {
         Text.Font = GameFont.Small;
 
-        float margin = 10;
+        const float margin = 10;
         var xPos = inRect.x + margin;
         var yOff = inRect.y + margin;
         var posW = inRect.width - (2 * margin);
@@ -41,7 +41,7 @@ public class SaM_Mod : Mod
         var editDescription = new Rect(xPos, yOff, posW, 24);
 
         Widgets.CheckboxLabeled(editCheckbox, "SaM_Settings_editOnBuild_label".Translate(),
-            ref settings.editOnBuild);
+            ref Settings.EditOnBuild);
         Widgets.Label(editDescription, "SaM_Settings_editOnBuild_description".Translate());
 
         yOff += editDescription.height + 9;
@@ -51,7 +51,7 @@ public class SaM_Mod : Mod
         var pauseDescription = new Rect(xPos, yOff, posW, 24);
 
         Widgets.CheckboxLabeled(pauseCheckbox, "SaM_Settings_pauseOnEdit_label".Translate(),
-            ref settings.pauseGameOnEdit);
+            ref Settings.PauseGameOnEdit);
         Widgets.Label(pauseDescription, "SaM_Settings_pauseOnEdit_description".Translate());
         if (currentVersion == null)
         {
